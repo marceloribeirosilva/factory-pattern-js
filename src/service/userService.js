@@ -1,4 +1,4 @@
-export default class UserService {
+class UserService {
   constructor({ userRepository }) {
     this.userRepository = userRepository;
   }
@@ -9,3 +9,4 @@ export default class UserService {
     return users.map(user => ({... user, name: user.name.toUpperCase()}));
   }
 }
+module.exports = UserService;

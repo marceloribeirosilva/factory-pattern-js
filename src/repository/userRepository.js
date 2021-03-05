@@ -1,4 +1,4 @@
-export default class UserRepository {
+class UserRepository {
   constructor({ dbConnection }) {
     this.dbConnection = dbConnection;
   }
@@ -7,3 +7,4 @@ export default class UserRepository {
     return this.dbConnection.find(query);
   }
 }
+module.exports = UserRepository;

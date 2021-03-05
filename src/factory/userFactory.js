@@ -1,8 +1,8 @@
-import UserRepository from '../repository/userRepository';
-import UserService from '../service/userService';
-import Database from '../util/database';
+const UserRepository = require('../repository/userRepository');
+const UserService = require('../service/userService');
+const Database = require('../util/database');
 
-export default class UserFactory {
+class UserFactory {
   static async createInstance() {
     const db = new Database ({ connectionString: 'mongodb://localhost' });
     const dbConnection = await db.connect();
@@ -12,3 +12,5 @@ export default class UserFactory {
     return userService;
   }
 }
+
+module.exports = UserFactory;
