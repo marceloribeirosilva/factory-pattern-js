@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/userFactory.test.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/marceloribeirosilva/factory-pattern-js/issues"
   },
-  "homepage": "https://github.com/marceloribeirosilva/factory-pattern-js#readme"
+  "homepage": "https://github.com/marceloribeirosilva/factory-pattern-js#readme",
+  "devDependencies": {
+    "rewiremock": "^3.14.3"
+  }
 }
